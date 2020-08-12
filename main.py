@@ -111,7 +111,7 @@ params_NB = {'vect__min_df': (0.001, 0.005, 0.01),
 parameters = [params_RF, params_KN, params_LR, params_NB]
 names = ['Vect_RF', 'Vect_KN', 'Vect_LR', 'Vect_NB']
 models = {}
-cross_validations = 2
+cross_validations = 5
 scoring_function = 'f1_micro'
 
 for pipeline, params, name in zip(pipelines, parameters, names):
